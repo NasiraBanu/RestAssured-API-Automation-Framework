@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ "master" ]
     schedule:
-    -cron: 00 17:40 * * *
+    -cron: 00 17:35 * * *
 
 jobs:
   build:
