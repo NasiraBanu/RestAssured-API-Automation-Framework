@@ -9,11 +9,18 @@ on:
     -cron: 00 17:37 * * *
 
 jobs:
-  build:
-
+   build-and-test:
     runs-on: ubuntu-latest
-
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
+        
     - uses: actions/checkout@v4
     - name: Set up JDK 20
       uses: actions/setup-java@v4
