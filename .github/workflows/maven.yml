@@ -36,6 +36,7 @@ jobs:
       if: always()
       uses: dorny/test-reporter@v1
       with:
+        name: JUnit Tests
         path: target/surefire-reports/junitreports/TEST-*.xml
         reporter: java-junit
      
