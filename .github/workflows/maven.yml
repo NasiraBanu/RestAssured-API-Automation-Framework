@@ -25,6 +25,8 @@ jobs:
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4.6.2
       with:
-      Name: Logs
+
+      
+      name: Logs
       path: logs/
      
