@@ -34,7 +34,7 @@ jobs:
         path: logs/
     - name: Publish Test Report
       if: always()
-      uses: drony/test-reporter@v1
+      uses: dorny/test-reporter@v1
       with:
         path: target/surefire-reports/junitreports/TEST-*.xml
         reporter: java-junit
